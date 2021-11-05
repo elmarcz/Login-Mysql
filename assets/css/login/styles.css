@@ -1,0 +1,16 @@
+.container {
+    background-color: #d61d4e;
+    height: 100%;
+  }
+  
+  /* Custom Scrolls */
+  ::-webkit-scrollbar {
+    width: 0.01px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 5px;
+  }
+  /* Custom Scrolls */
+  

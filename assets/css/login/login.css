@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+  overflow-y: hidden;
+}
+
+.login {
+  height: 500px;
+  width: 400px;
+  background-color: #ffdee6;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 15px;
+}
+
+.login form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 350px;
+}
+
+.h1-login {
+  margin-top: 50px;
+  font-family: "Fruktur", cursive;
+  font-size: 50px;
+}
+
+.text {
+  text-decoration: none;
+  font-style: none;
+  border: 2px solid #141414;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  height: 35px;
+  width: 300px;
+}
+
+.password {
+  text-decoration: none;
+  font-style: none;
+  border: 2px solid #141414;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  height: 35px;
+  width: 300px;
+}
+
+.boton {
+  margin-top: 20px;
+
+  height: 35px;
+  width: 300px;
+
+  border-radius: 10px;
+
+  background: #141414;
+
+  color: #fff;
+
+  border: transparent;
+  cursor: pointer;
+}
+
+/*  FOOTER  */
+
+footer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e1d1d;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+
+  
+}
+
+footer .Marc {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #8cc6ee;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
