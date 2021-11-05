@@ -34,7 +34,7 @@
         </div>
         <div class="container-login">
             <div class="login">
-                <form>
+                <form action="login.php" method="POST">
                     <h1 class="h1-login">Log In</h1>
                     <input type="text" class="text" placeholder="Enter your Username" required>
                     <input type="password" class="password" placeholder="Enter your Password" required>

@@ -1,3 +1,25 @@
+<?php
+    require 'database.php';
+
+    $message = '';
+
+    if(!empty($_POST['user']) && !empty($_POST['password'])){
+        $sql = "INSERT INTO users (user, password) VALUES (:user, :password)";
+        $stmt = $conn->prepare($sql);
+        $stmt -> bindParam(':user', $_POST['user']);
+        $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+        $stmt -> bindParam(':password', $password);
+        
+        if($stmt->execute()) {
+            $message = 'Succesfully Created New User';
+            console_log($message);
+        }else{
+            $message = 'Failed to Create your password!';
+            console_log($message);
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,12 +56,17 @@
         </div>
         <div class="container-login">
             <div class="login">
-                <form>
-                    <h1 class="h1-login">Sing Up</h1>
-                    <input type="text" class="text" placeholder="Enter your Username" required>
-                    <input type="password" class="password" placeholder="Enter your Password" required>
+                <form action="signup.php" method="POST">
+                    <?php if(!empty($message)): ?>
+                        <p><?php $message ?></p>
+                    <?php endif; ?>
 
-                    <input type="submit" class="boton dos" placeholder="">
+                    <h1 class="h1-login">Sing Up</h1>
+                    <input type="text" class="text" class="user" placeholder="Enter your Username" required>
+                    <input type="password" class="password" placeholder="Enter your Password" required>
+                    <input type="password" class="password" placeholder="Confirm your Password" required>
+
+                    <input type="submit" class="boton dos">
                 </form>
             </div>
         </div>
