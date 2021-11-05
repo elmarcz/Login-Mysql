@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://elmarcz.github.io/Login" target="blank"><img src="img/Logo.png" width="160" alt="Login Mysql Logo" /></a>
+  <a href="https://elmarcz.github.io/Login" target="blank"><img src="img/logo.png" width="160" alt="Login Mysql Logo" /></a>
   <h1 align="center" href="https://elmarcz.github.io/Login">Login With Mysql</h1>
 </p>
 <p align="center">A complete Login and Register page using a Mysql Database</p>
